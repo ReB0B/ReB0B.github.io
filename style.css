@@ -1,3 +1,6 @@
+/* style.css */
+
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -11,43 +14,47 @@ html, body {
     letter-spacing: 5px;
 }
 
-/* Flexbox container to divide the two sections */
+/* Container */
 .container {
     display: flex;
     flex-direction: column;
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
 }
 
-/* Gray section fills remaining space */
+/* Gray Section */
 .gray-section {
-    background-color: #e0e0e0; /* Light gray */
-    flex: 1; /* Takes up all available space */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: #e0e0e0;
+    flex: 1;
+    position: relative;
+    overflow: hidden;
 }
 
-/* White section stays fixed at the bottom */
+/* White Section */
 .white-section {
-    background-color: #fff; /* White background */
-    height: 30%; /* Fixed height for the bottom section */
+    background-color: #fff;
+    height: 30%;
     display: flex;
     justify-content: center;
-    align-items: top;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    align-items: flex-start;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
     padding-top: 2%;
 }
-
-.gray-section h1, .white-section p {
-    margin: 0;
+.gradient-text{
+    background: linear-gradient(to right, Gray, black,Gray);
+    background-size: 200% 200%;
+    animation: rainbow 2s ease-in-out infinite;
+  background-clip: text;
+  -webkit-background-clip:text;
+  display:block;
+  transition: color .2s ease-in-out;
+  text-transform:uppercase;
 }
+.gradient-text:hover{
+    color:rgba(0,0,0,0);
+  }
+  @keyframes rainbow { 
+    0%{background-position:left}
+    50%{background-position:right}
+    100%{background-position:left}
+  }
 
-.gray-section h1 {
-    font-size: 48px;
-    color: #333;
-}
-
-.white-section p {
-    font-size: 18px;
-    color: #555;
-}
