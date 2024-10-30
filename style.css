@@ -1,0 +1,15 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0; /* Optional: Light background for better contrast */
+}
+h1 {
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+    color: red;
+    letter-spacing: 5px;
+    font-size: 72px;
+}
