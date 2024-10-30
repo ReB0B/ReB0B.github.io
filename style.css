@@ -4,12 +4,12 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0f0f0; /* Optional: Light background for better contrast */
+    background-color: #fdf000; /* Optional: Light background for better contrast */
 }
 h1 {
     font-family: 'Helvetica', sans-serif;
     font-weight: bold;
-    color: rgb(64, 247, 2);
+    color: rgb(80, 17, 174);
     letter-spacing: 5px;
     font-size: 72px;
 }
