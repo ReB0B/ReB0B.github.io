@@ -1,15 +1,53 @@
-body {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+/* Flexbox container to divide the two sections */
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Gray section fills remaining space */
+.gray-section {
+    background-color: #e0e0e0; /* Light gray */
+    flex: 1; /* Takes up all available space */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #fdf000; /* Optional: Light background for better contrast */
 }
-h1 {
-    font-family: 'Helvetica', sans-serif;
-    font-weight: bold;
-    color: rgb(80, 17, 174);
-    letter-spacing: 5px;
-    font-size: 72px;
+
+/* White section stays fixed at the bottom */
+.white-section {
+    background-color: #fff; /* White background */
+    height: 30%; /* Fixed height for the bottom section */
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    padding-top: 2%;
+}
+
+.gray-section h1, .white-section p {
+    margin: 0;
+}
+
+.gray-section h1 {
+    font-size: 48px;
+    color: #333;
+}
+
+.white-section p {
+    font-size: 18px;
+    color: #555;
 }
