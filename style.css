@@ -40,7 +40,7 @@ html, body {
     padding-top: 2%;
 }
 .gradient-text{
-    background: linear-gradient(to right, Gray, black,Gray);
+    background: linear-gradient(to right, rgb(56, 56, 85), rgb(51, 79, 135),rgb(98, 73, 73));
     background-size: 200% 200%;
     animation: rainbow 2s ease-in-out infinite;
   background-clip: text;
