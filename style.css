@@ -1,6 +1,4 @@
-/* style.css */
-
-/* Global Styles */
+/* Remove letter-spacing from global styles */
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +9,6 @@ html, body {
     height: 100%;
     font-family: Helvetica, sans-serif;
     font-weight: bold;
-    letter-spacing: 5px;
 }
 
 /* Container */
@@ -35,29 +32,51 @@ html, body {
     height: 30%;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: top;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-    padding-top: 2%;
+    padding-top: 3%;
 }
-h1{
+
+/* Wrap: center text horizontally */
+.wrap {
+    text-align: center;
+}
+
+/* Heading Styles */
+h1 {
     font-size: 250%;
+    letter-spacing: 5px; /* Apply letter-spacing only to h1 if needed */
 }
-.gradient-text{
-    background: linear-gradient(to right, rgb(56, 56, 85), rgb(51, 79, 135),rgb(98, 73, 73));
+
+h3 {
+    font-size: 75%;
+    letter-spacing: 5px; /* Apply letter-spacing only to h3 if needed */
+}
+
+/* Gradient Text */
+.gradient-text {
+    background: linear-gradient(to right, rgb(56, 56, 85), rgb(51, 79, 135), rgb(98, 73, 73));
     background-size: 200% 200%;
     animation: rainbow 2s ease-in-out infinite;
-  background-clip: text;
-  -webkit-background-clip:text;
-  display:block;
-  transition: color .2s ease-in-out;
-  text-transform:uppercase;
+    background-clip: text;
+    -webkit-background-clip: text;
+    display: block;
+    transition: color .2s ease-in-out;
+    text-transform: uppercase;
 }
-.gradient-text:hover{
-    color:rgba(0,0,0,0);
-  }
-  @keyframes rainbow { 
-    0%{background-position:left}
-    50%{background-position:right}
-    100%{background-position:left}
-  }
 
+.gradient-text:hover {
+    color: rgba(0, 0, 0, 0);
+}
+
+@keyframes rainbow {
+    0% { background-position: left }
+    50% { background-position: right }
+    100% { background-position: left }
+}
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adds spacing between icons */
+    margin-top: 20px; /* Adds spacing below h3 */
+}
