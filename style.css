@@ -74,9 +74,24 @@ h3 {
     50% { background-position: right }
     100% { background-position: left }
 }
+
+/* Icons Container */
 .icons {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Adds spacing between icons */
-    margin-top: 20px; /* Adds spacing below h3 */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Apply styles to the images inside the anchor tags */
+.icons a img {
+    width: 80%;
+    height: 80%;
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+    cursor: pointer; /* Indicate the item is clickable */
+}
+
+/* Hover effect for scaling */
+.icons a img:hover {
+    transform: scale(1.1); /* Slightly increase the size by 10% */
 }
