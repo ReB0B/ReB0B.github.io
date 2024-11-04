@@ -42,6 +42,7 @@ html, body {
     line-height: 1;
     letter-spacing: 0.1vw;
     white-space: nowrap;
+    letter-spacing: 1vw;
 }
 
 /* Middle Section */
@@ -65,6 +66,7 @@ html, body {
     font-size: calc(1.5vw + 1.5vh);
     line-height: 1; /* Eliminates extra space */
     text-transform: uppercase;
+    letter-spacing: 0.6vw;
 }
 
 .icons {
