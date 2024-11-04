@@ -88,3 +88,20 @@ html, body {
 .icons a img:hover {
     transform: scale(1.3); /* Slightly increase the size by 10% */
 }
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+    .container {
+        height: 95vh; /* Use a specific height to ensure no overflow */
+        width: 95vw;
+        margin: 2.5vw;
+    }
+    .name {
+        font-size: calc(4vw + 2vh);
+    }
+    .role {
+        font-size: calc(3vw + 1vh);
+    }
+    .icons img {
+        height: calc(2vw + 2vh);
+    }
+}
